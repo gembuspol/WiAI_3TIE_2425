@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Znaczniki tekstu i formularz</title>
+</head>
+<body>
+    <header>
+        <!-- nagłówki stopniowane h1 do h6 -->
+         <h1>Znaczniki tekstu i formularz</h1>
+    </header>
+    <main>
+        <!-- <p> paragraf - akapit - fragment tekstu od entera to entera -->
+            <p>To jest tekst w paragrafie</p>
+            <!-- znak nowej lini na stronie <br> -->
+             <p>To jest tekst podzielony <br> na dwie linie</p>
+            <!-- <hr> linia oddzielająca tekst, bez znacznika końcowego -->
+             <hr>
+             <!-- tekst preformatowany, tekst wygląda tak jak w dokumencie źródłowym <pre> i znacznik końcowy </pre> -->
+              <pre>
+                Witajcie 
+
+                Teletubisie!
+
+                klasa 3TIE
+              </pre>
+    </main>
+    <section>
+        <h2>Znaczniki formularza</h2>
+        <!-- <form> i </form> - początek i koniec formularza -->
+         <form>
+            <!-- <input>  - kontrolka do wprowadzania danych, ma wiele typów. text - wprowadzania tekstu, number - wprowadzania liczb, submit - zatwierdzenie danych w formularzu, password - do wprowadzania hasła, radio - do wyboru jednej opcji, checkbox - do wyboru jednej lub więcej opcji, reszta pod linkiem https://www.w3schools.com/html/html_form_input_types.asp-->
+            <!-- dobrą praktyką dla pól typu input jest dodawnaie etykiety - <label></label> -->
+             <label for="napis">Tutaj wprowadź napis</label>
+             <input type="text" id="napis">
+             <br>
+             <input type="password" id="haslo">
+             <label for="haslo">Tutaj podaj tajne hasło</label>
+             <br>
+             <input type="submit" value="Prześlij do Igora">
+             <br>
+             <label for="dlugoscHasla">Podaj minimalną długość hasła</label>
+             <input type="number" id="dlugoscHasla">
+             <!-- przycisk typu radio musi miec tą samą nazwę dla wszystkich opcji -->
+              <br>
+              <input type="radio" name="wiek" id="w16">
+              <label  for="w16">16</label> <br>
+              <input type="radio" name="wiek" id="w17">
+              <label  for="w17">17</label> <br>
+              <input type="radio" name="wiek" id="w18">
+              <label  for="w18">18</label> <br>
+              <input type="radio" name="wiek" id="w19">
+              <label  for="w19">19</label> <br>
+              <!-- checkbox - może mieć różne identyfikatory -->
+               <p>Co dzisiaj zjesz na kolację?</p>
+               <input type="checkbox" id="wybor1">
+               <label for="wybor1">pizza</label><br>
+               <input type="checkbox" id="wybor2">
+               <label for="wybor2">kebab</label><br>
+               <input type="checkbox" id="wybor3">
+               <label for="wybor3">frytki</label><br>
+         </form>
+    </section>
+    <footer>
+        Stronę wykonał Przemek
+    </footer>
+</body>
+</html>
