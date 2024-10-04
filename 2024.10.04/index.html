@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze i zdjęcia</title>
+</head>
+<body>
+    <header>
+        <h2>Formularze i zdjęcia</h2>
+    </header>
+    <main>
+        <h3>Formularze</h3>
+        <p>Formularz do wypełniania danych z ramką</p>
+        <!-- parametr action stosuje sie do działań jakie mają wysrapić po zatwierdzeniu formularza - gdzie bedą przesłane dane 
+        parametr metho - okresla w jaki sposób będą przesłane dane, GET - jawnym tekstem, POST - ukrytem tekstem 
+        patametr target - określa jak ma zasochowac przeglądarka po zatwierdzeniu arkusza, _blank otwiera nową kartę w przeglądarce, _self - w tym samemy oknie 
+        -->
+        <form action="index.html" method="GET" target="_blank">
+            <fieldset>
+                <!-- znacznik fieldset okresla pole formularza - ramka dookała formularza 
+                znancznik legend określa opis na ramce formularza 
+                -->
+                 <legend>Klasa 3TIE</legend>
+                 <label for="imie">Podaj imię</label><br>
+                 <input type="text" id="imie">
+                 <br>
+                 <label for="grupa">Wybierz grupę</label>
+                <!-- Znacznik select rozpoczyna zakres elementów które bedą znajdowały się w polu wyboru
+                znacznik option określa kolejne opcje do wyboru 
+                atrybut selected - ustawia wybranąo opcję jako domyślną
+                atrybut multiple - określa, że można wybrać wiele opcji
+                atrybut size - określa ile wierszy pokazuje się naraz
+                -->
+                <select name="grupa" id="grupa" size="2" multiple>
+                    <option value="Grupa Bena">Grupa Bena</option>
+                    <option value="Grupa Igora" selected>Grupa Igora</option>
+                    <option value="Grupa Marcina M.">Grupa Marcina M.</option>
+                </select>
+                <br>
+                <textarea>
+                    Długi tekst
+                </textarea>
+                <br>
+                <label for="zakres">Wybierz liczbę</label><br>
+                <input type="range" min="0" max="50" id="zakres">
+                <br>
+                <br>
+                <label for="kolor">Wybierz kolor</label><br>
+                <input type="color" id="kolor">
+                <br>
+                <label for="data">Wybierz datę</label><br>
+                <input type="date" id="data">
+                <br>
+                <input type="submit" value="zapisz">
+                <br>
+                <input type="reset" value="reset">
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>
