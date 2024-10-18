@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele</title>
+    <style>
+        table{
+            border-width: 1px;
+            border-style: solid;
+            border-color: blue;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>tabele</h1>
+    </header>
+    <section>
+        <h2>Tabela 1</h2>
+        <table>
+            <tr>
+                <td>Lp.</td>
+                <td>Imię</td>
+                <td>Nazwisko</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Adam</td>
+                <td>Nowak</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td>Lp.</td>
+                <td>Numer</td>
+                <td>Imię</td>
+                <td>Nazwisko</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>11</td>
+                <td>Ben</td>
+                <td>Testowy</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">32</td>
+                <td>Super</td>
+                <td>Mario</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td colspan="2">napisiki</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
