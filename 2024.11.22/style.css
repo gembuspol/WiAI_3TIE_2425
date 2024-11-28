@@ -5,13 +5,22 @@ header{
     border-style: double;
     border-color: hotpink;
     border-width: 5px;
-    border-radius: 40px;
+    border-radius: 120px;
     padding: 50px;
     margin-left: 100px;
     margin-top: 50px;
 }
-p:hover{
+p + b{
     background-color: dodgerblue;
     padding: 10px;
     box-shadow: 0 0 20pc 10px yellow;
+}
+#olek{
+    background-color: green;
+}
+#paragraf{
+    background-color: orange;
+}
+.cos{
+    background-color: hotpink;
 }
