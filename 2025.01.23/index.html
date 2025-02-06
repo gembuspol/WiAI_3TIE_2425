@@ -77,8 +77,25 @@
         <em>alt</em> - tekst alternatywny pojawiający się w momecie gdy nie można wyświetlić zdjęcia<br>
         <em>title</em> - tekst pojawiający się po najechaniu na zdjęcie<br>
         <h2>Odsyłacze</h2>
-        <em>&lt;&gt;&lt;&gt;</em> <br>
+        <em>&lt;a href="adres"&gt;&lt;/a&gt;</em> - odnośnik, hiperłącze do innego miejsca lub strony, można nim obudować inne bloki <br>
+        <em> target=""</em> - ustala w jaki sposób otwiera się hiperłącze. _blank - otwiera w nowe karcie, _self - otworzy się w tej samej karcie, ustawione domyślnie, _parent - otwiera się w ramce rodzica, _top - otaworzy na całej stronie <br>
+        <em>&lt;a name="adres"&gt;&lt;/a&gt;</em> - odnośnik, hiperłącze do innego miejsca na tej stronie - przewijanie strony. Aby to działało musi być na stronie element z id podanym jako "adres" <br>
+        <em>&lt;map name=""&gt;&lt;/map&gt;</em> - początek mapy odsylaczy. Możemy określić nie tylko konkretny element ale także jego fragment np. część zdjęcia. Wewnątrz tego znacznika będzie znajdował się znacznik area <br>
+        <em>&lt;area&gt;&lt;/area&gt;</em> -znacznik określający odnośnik mapy. Może zawierać parametry shape - kształ, coords - kordynaty, inaczej współrzędne, href - adres odnośnika, alt - tekst alternatywny<br>
+        <img src="CSS.png" alt="Zdjęcie" usemap="#zdjCSS" width="300" height="300">
+        <map name="zdjCSS">
+            <area shape="rect" coords="100,100,270,350" alt="Computer" href="https://allegro.pl/">
+        </map>
         
+        <img src="CSS.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://allegro.pl/">
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map> 
+        <em>&lt;&gt;&lt;&gt;</em> <br>
+        <em>&lt;&gt;&lt;&gt;</em> <br>
     </main>
 </body>
 </html>
