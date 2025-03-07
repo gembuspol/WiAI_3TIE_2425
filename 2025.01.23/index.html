@@ -98,12 +98,37 @@
         <em>&lt;form&gt;&lt;/form&gt;</em> rozpoczyna i kończy zakres formularz, zgrupować dane przesyłane <br>
         <em>&lt;form action=""&gt;&lt;</em>/form&gt;</em> przesyłanie danych w formularz do miejsca określonego w parametrze action <br>
         <em>&lt;form method=""&gt;&lt;/form&gt;</em> - sposób przesyałania danych w formularzu. występują dwie opcje GET i POST. Metoda GET przesyła dane jawnym tekstem, Metoda POST przesyła ukrytem tekstem, bezpiecznie. Domyślnie wybieran metoda GET <br>
-        <em>&lt;input type=""&gt;&lt;/input&gt;</em> pole do wprowadzania danych. Może przyjmować następujące typy: "text" - tekst, "number" - liczby, pole ma suwak do zmiany wartości, "date" - do przechowywania daty, ma przycisk do rozwinięcia kalendarza, "submit" - przycisk zatwierdzenia formularza, przesyła dane wprowadzane w formularzu; "checkbox" - przycisk, kótry możemy zaznaczyć, przechowuje wartości prawda/fałsz, może występować niezależnie od innych, "radio" - pole wyboru, opcje wyboru - występuje zazwyczaj w grupie kilku elementów i pozwala na zaznaczenie tylko jednej opcji z dostępny <br>
+        <em>&lt;input type=""&gt;&lt;/input&gt;</em> pole do wprowadzania danych. Może przyjmować następujące typy:
+        <ul>
+            <li> "text" - tekst, "number" - liczby, pole ma suwak do zmiany wartości, </li>
+            <li>"date" - do przechowywania daty, ma przycisk do rozwinięcia kalendarza, </li>
+            <li>"submit" - przycisk zatwierdzenia formularza, przesyła dane wprowadzane w formularzu; </li>
+            <li>"checkbox" - przycisk, kótry możemy zaznaczyć, przechowuje wartości prawda/fałsz, może występować niezależnie od innych, </li>
+            <li>"radio" - pole wyboru, opcje wyboru - występuje zazwyczaj w grupie kilku elementów i pozwala na zaznaczenie tylko jednej opcji z dostępny; </li>
+            <li> "password" - pozwala na wpisanie hasła, nie widać wpisywanych znaków - są za to kropki; </li>
+            <li> "file" - do przesyłania plików; </li>
+            <li> "reset" - pozwala na wyczyszczenie formularza; </li>
+            <li> "hidden" - ukryta kontrolka; </li>
+            <li> "button" - przycisk w formularzu, zazwyczaj wykorzystywany do uruchamiania innych programów np. javaScript</li>
+            <li>"color" - pole do wybierania koloru</li>
+            <li>"e-mail" - pole do wprowadzania adresu e-mail</li>
+        </ul> <br>
         <em>&lt;input type="text" id="imie" name="imie"&gt;&lt;/input&gt;</em> parametr name jest wymagany gdy przesyłamy dane przez formularza, pozwala to na odpowiednie odczytanie danych <br>
         <em>&lt;input type="text" id="imie" value="imie"&gt;&lt;/input&gt;</em> parametr value określa wartość przypisaną do tego pola input - ta wartość nie zawsze musi być wyświetlane<br>
         <em>&lt;input type="text" id="imie" size=10&gt;&lt;/input&gt;</em> parametr size określa maksymalną ilość znaków<br>
         <em>&lt;input type="text" id="imie" maxlength=8&gt;&lt;/input&gt;</em> maxlength - określa maksymalną ilość znaków w polu, minlength - określa minimalną wartość znaków, stosuje sie przy walidacji danych w formularzu <br>
-        <em>&lt;&gt;&lt;&gt;</em> <br>
+        <em>&lt;button&gt;&lt;/button&gt;</em> przycisk, można do niego przypisać różne działania, jak również tye="submit" - wtedy prześle formularz <br>
+        <em>&lt;label for=""&gt;&lt;/label&gt;</em> - etykieta dla pola w formularzu. W atrybucie for podajemy nazwę id pola ona dotyczy<br>
+        <em>&lt;fieldset&gt;&lt;/fieldset&gt;</em> - grupowanie elementów formularza, zazwyczaj wyglada to jak obeamowanie dookoło elementów <br>
+        <em>&lt;legend&gt;&lt;/legend&gt;</em> - Tytuł grupy elementów, który musi występować ze znacznikiem fieldset <br>
+        <em>&lt;select name=""&gt;&lt;/select&gt;</em> Lista wyboru, pole formularza, które pozwala na wybranie jednej wartości z dostepnej listy. Atrybut "multiple" pozwala na zaznaczenie wielu elementów listy. Atrybut size="" określa ile naraz jest wyświetlanyc elementów. Lista wyboru zawsze występuje wraz ze znacznikiem option w którym podajemy elementy do wyboru  <br>
+        <em>&lt;option &gt;&lt;/option&gt;</em> element listy, który możemy wybrać. Powinno zawierać zawierać atrybut "value" który będzie określał wartość tego wyboru. <br>
+        <em>&lt;optiongroup&gt;&lt;/optiongroup&gt;</em> pozwala na grupowanie elementów <br>
+        <em>&lt;textarea&gt;&lt;/textarea&gt;</em> pozwala na wprowadzenie większej ilości tekstu. Może pryjmować parametry name - nazwa, rows - ilośc wierszy, cols - ilość znaków w wierszu <br>
+        <em>disabled</em> - parametr dla elemntu formularza, który ma nie być dostępny dla użytkownika ale ma być widoczny<br>
+        <em>readonly</em> - parametr pozwala na wyświetlenie elementu formularza bez możliwości zmiany danych <br>
+        <em>accesskey</em> paramter umożliwiający przypisanie skrótu klawiszowego do wybranej opcji <br>
+        <em>&lt;datalist&gt;&lt;/datalist&gt;</em> służy do zdefiniowania wartości dostępnych dla pola input, które będą podpowiadane dla tego pola. w znaczniku input musi znaleść się atrybut list z nazwą listy<br>
         <em>&lt;&gt;&lt;&gt;</em> <br>
         <em>&lt;&gt;&lt;&gt;</em> <br>
     </main>
