@@ -129,6 +129,41 @@
         <em>readonly</em> - parametr pozwala na wyświetlenie elementu formularza bez możliwości zmiany danych <br>
         <em>accesskey</em> paramter umożliwiający przypisanie skrótu klawiszowego do wybranej opcji <br>
         <em>&lt;datalist&gt;&lt;/datalist&gt;</em> służy do zdefiniowania wartości dostępnych dla pola input, które będą podpowiadane dla tego pola. w znaczniku input musi znaleść się atrybut list z nazwą listy<br>
+        <em>&lt;input type="text" autofocus &gt;&lt;/input&gt;</em> Przeniesie zaznaczenie automatycznie po załadowaniu stronu w poden miejsce<br>
+        <em>&lt;input type="text" autocomplete&gt;&lt;/input&gt;</em> można ustawić aby nie wpisywały się automatycznie zapisane wsześniej dane <br>
+        <em>&lt;input type="text" required&gt;&lt;/input&gt;</em> to pole jest obowiązkowe, nie prześle danych przez formularz dopóki tego nie uzupełnimy<br>
+        <em>&lt;input type="text" pattern="[0-9]{2}"&gt;&lt;/input&gt;</em> <br>
+        <form>
+        <input type="text" pattern="[0-9]{2}">
+        <input type="submit" value="Prześlij">
+        </form>
+        <h2>
+            Multimedia
+        </h2>
+        <em>&lt;video controls&gt;&lt;/video&gt;</em> określa początek i koniec bloku w którym zostanie umieszczone wideo. Można dodać wysokość tego elementu, szerokość oraz przyciski do nawigowania filme - controls <br>
+        <em>&lt;source src="" type="video/mp4"&gt;</em>znacznik określający lokalizacje pliku multimedialnego oraz typu danych jakie przechowuje. <br>
+        <em>tekst wyświetlany gdy nie można wyświetlić wideo</em> W przypadku gdy nie można wyświetlić wideo poniżej znacznika source ale między znacznikami video wpisujemy tekst, który ma się wyświetlić <br>
+        <video width="300px" height="200px" controls>
+            <source src="motyl.mp4" type="video/mp4">
+            Tego filmu nie można wyświetlić
+        </video>
+        <br>
+        <em>&lt;audio controls&gt;&lt;/audio&gt;</em>  blok zawierający plik dźwięk<br>
+        <em>&lt;source src="" type="audio/ogg"&gt;</em>znacznik określający lokalizacje pliku multimedialnego oraz typu danych jakie przechowuje. <br>
+        <em>tekst wyświetlany gdy nie można odtworzyć audio</em> W przypadku gdy nie można wyświetlić audio poniżej znacznika source ale między znacznikami video wpisujemy tekst, który ma się wyświetlić <br>
+        <audio controls>
+            <source src="motyl.mp4">
+            Tekst gdy nie działa wideo
+        </audio>
+        <br>
+        <em>&lt;canvas&gt;&lt;canvas&gt;</em> - blok służący do rysowania, tworzenia rysunków, obrazów, wykresów np. z wykorzystanie javascript <br>
+        <em>&lt;embed src=""&gt;</em> dodaje zewnątrzną aplikacje do strony www <br>
+        <em>&lt;object data=""&gt;&lt;&gt;</em> dodaje zewnątrzny obiekt taki jak aplet Javy, czytnik PDF, inną stronę www itp. <br>
+        <h2>Zdarzenia - wykorzystywane np. w Java sricpt</h2>
+        <ul>
+            <li><em>&lt;onclick=""&gt;</em> <br></li>
+            <li><em>&lt;&gt;</em> <br></li>
+        </ul>
         <em>&lt;&gt;&lt;&gt;</em> <br>
         <em>&lt;&gt;&lt;&gt;</em> <br>
     </main>
