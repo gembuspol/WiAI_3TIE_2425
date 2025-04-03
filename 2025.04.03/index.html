@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaskadowe arkusze stylów</title>
+</head>
+<body>
+    <h1>Styl lokalny</h1>
+    <ul>
+        <li><em>&lt;body style="color:white"&gt;</em> styl lokalny wewnątrz znacznika </li>
+        <li><em>&lt;span style="color:white"&gt;...&lt;/span&gt</em> styl lokalny jako rozciągnięty blok - może być na kilku znacznikach</li>
+        <li><em>&lt;section style="color:white"&gt;...&lt;/section&gt</em> styl lokalny jako blok </li>
+    </ul>
+    <h1>Wewnętrzny arkusz styli</h1>
+    <ul>
+        <li><em>&lt;style&gt;</em><em>&lt;/style&gt;</em> styl wewnętrzny - wpisujemy go ew nagłówku strony - sekcji head </li>
+    </ul>
+    <h1>Zewnętrzny arkusz styli</h1>
+    <ul>
+        <li><em>&lt;link rel="stylesheet" type="txt/css" href="arkusz.css"&gt;</em> styl zewewnętrzny zapisujemy go w osobnym pliku </li>
+    </ul>
+    <h1>import arkusza stylów</h1>
+    <ul>
+        <li><em>@import urt("..."); - import arkusza z zewnętrznego źródła</em></li>
+    </ul>
+    <h1>Kaskadowość arkuszy stylów</h1>
+    <h3>Ważnaść poszczególnych rodzajów stylów(numer 1 ma najwyższy piorytet - pierwszeństwo w wyświetlnaiu informacji na stronie, a styl nr 7 ma najniższy</h3>
+    <ol>
+        <li>Styl lokalny</li>
+        <li>Rozciagniecie stylu (span)</li>
+        <li>Wydzielone bloki (section w nim wpisane)</li>
+        <li>Wewnętrzny arkusz styli (to co jest między znacznikami style</li>
+        <li>Zewnętrzny arkusz styli</li>
+        <li>Import stylów do zewnętrznego arkusza</li>
+        <li>atrybuty definiowane w dokumencie HTML</li>
+    </ol>
+    <h3>Zasady Kaskadowości można zmieniać, służy do tego polecenioe !important i umieszcza się je w deklaracji stylu </h3>
+    <h1>Dziedziczenie</h1>
+    <p>Jeżeli styl będzie sie odnosił do kilku elementów np. znaczników bloku footer to jeżeli będziemy ustawiac dla niego jakieś atrybuty, to te atrybuty będą się pojawiać u wszystkich. Jeżeli jeden z tych elementów zmienimy z wykorzystaniem np. id to musimy pamiętać aby wszystkie atrybu zmienić, nie zmienione atrybuty zostana zaczerpnięte z poprzedniego stylu</p>
+    <h1>
+        Składnia języka CSS
+    </h1>
+    <h2>Język CSS składa się z: selektora (np. paragraf, znacznik HTML, klasa, identyfikator), właściwość (np. color), wartość(wyrażona w odpowiednich jednostakch</h2>
+    <h2>Wartości i jednostki</h2>
+    <ul>
+        <li>Liczby - całkowite i rzeczywiste</li>
+    </ul>
+</body>
+</html>
